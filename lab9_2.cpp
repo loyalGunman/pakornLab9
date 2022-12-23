@@ -21,12 +21,10 @@ char findGrade(double x)
     {
         return 'F' ;
     }
-    
 }
 
 int main()
 {
-
 	int N,i = 0;
 	cout << "Enter the number of students: ";
 	cin >> N;
@@ -35,17 +33,13 @@ int main()
     
 	while(i < N)
 	{
-       
 		cout << "Name of student " << i+1 << ": ";
         cin.ignore();
         getline(cin, name[i]);
-		
         cout << "Score of student " << i+1 << ": ";
 		cin >> score[i];
-        
 		i++;
 	}
-	
 	int j = 0;
 	cout << "---------------------------------------------\n";
 	cout << setw(25) << "Name" << setw(8) << "Score" << setw(8) << "Grade" << "\n";
